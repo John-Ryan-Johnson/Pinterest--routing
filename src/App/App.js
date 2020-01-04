@@ -5,6 +5,7 @@ import {
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import firebaseConnection from '../helpers/data/connection';
+import MyNavbar from '../components/shared/MyNavbar/MyNavbar';
 import './App.scss';
 import Home from '../components/pages/Home/Home';
 import Auth from '../components/pages/Auth/Auth';
@@ -47,6 +48,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Router>
+          <MyNavbar authed={authed}/>
           <Switch>
             <PrivateRoute path="/" exact component={Home} authed={authed}/>
             <PrivateRoute path="/board/new" exact component={NewBoard} authed={authed}/>
