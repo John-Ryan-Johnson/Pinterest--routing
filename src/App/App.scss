@@ -3,6 +3,8 @@
 
 .App {
   text-align: center;
+  background-color: aqua;
+  height: 100vh;
 }
 
 .App-logo {
@@ -17,7 +19,6 @@
 }
 
 .App-header {
-  background-color: $primary-color;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
