@@ -35,7 +35,6 @@ class App extends React.Component {
             <PrivateRoute path="/board/:boardId" exact component={SingleBoard} authed={authed}/>
           </Switch>
         </Router>
-
       </div>
     );
   }
